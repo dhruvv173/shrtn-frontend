@@ -1,14 +1,14 @@
-import { Button } from "@/components/ui/button";
+import UrlInputForm from "./components/UrlGeneratorForm";
 
 function App() {
-  const handleClick = () => {
-    console.log("Button clicked!");
+  const handleUrlGenerated = () => {
+    console.log("GENERATED");
   };
+
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <Button onClick={handleClick}>Click me</Button>
+    <div className="App">
+      <UrlInputForm onGenerate={handleUrlGenerated} />
     </div>
   );
 }
-
 export default App;
